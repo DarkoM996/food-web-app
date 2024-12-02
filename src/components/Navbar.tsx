@@ -15,14 +15,14 @@ const Navbar = () => {
       <Link to="/">
         <h4 className="font-bold text-2xl">The Tomato</h4>
       </Link>
-      <div>
-        <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
-      </div>
+      <div></div>
       <DropdownMenu>
-        <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+        <DropdownMenuTrigger>
+          <Avatar>
+            <AvatarImage src="https://github.com/shadcn.png" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+        </DropdownMenuTrigger>
         <DropdownMenuContent>
           <DropdownMenuLabel>My Account</DropdownMenuLabel>
           <DropdownMenuSeparator />
