@@ -20,7 +20,12 @@ export default {
           400: "#F25C5C",
           500: "#D42525",
         },
-        primary_backgroundDarkerColor: {},
+        primary_backgroundDarkerColor: {
+          600: "#A11010",
+          700: "#6E0808",
+          800: "#3B0303",
+          900: "#1F0000",
+        },
       },
     },
   },
