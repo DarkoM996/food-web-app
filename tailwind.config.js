@@ -40,10 +40,10 @@ export default {
         },
         primary_white: {
           100: "#FFFFFF",
-          200: "#B7F2B6",
-          300: "#8AEB88",
-          400: "#57DE54",
-          500: "#2AD427",
+          200: "#F2F0F0",
+          300: "#EDE8E8",
+          400: "#E6E1E1",
+          500: "#E0DCDC",
         },
         primary_black: {
           600: "#2B2828",
