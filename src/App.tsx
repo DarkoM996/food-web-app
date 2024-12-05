@@ -4,6 +4,7 @@ import RootLayout from "./layouts/RootLayout";
 import MenuLayout from "./pages/MenuLayout";
 import Favorite from "./pages/Favorite";
 import Orders from "./pages/Orders";
+import Booking from "./pages/Booking";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/menulayout" element={<MenuLayout />} />
           <Route path="/favorite" element={<Favorite />} />
           <Route path="/orders" element={<Orders />} />
+          <Route path="booking" element={<Booking />} />
         </Route>
       </Routes>
     </div>
