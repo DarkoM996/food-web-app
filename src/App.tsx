@@ -5,6 +5,8 @@ import MenuLayout from "./pages/MenuLayout";
 import Favorite from "./pages/Favorite";
 import Orders from "./pages/Orders";
 import Booking from "./pages/Booking";
+import AuthLayout from "./layouts/AuthLayout";
+import SignIn from "./pages/SignIn";
 
 const App = () => {
   return (
@@ -16,6 +18,9 @@ const App = () => {
           <Route path="/favorite" element={<Favorite />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="booking" element={<Booking />} />
+        </Route>
+        <Route path="authlayout" element={<AuthLayout />}>
+          <Route index element={<SignIn />} />
         </Route>
       </Routes>
     </div>
