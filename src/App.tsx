@@ -10,7 +10,6 @@ import RootLayout from "./layouts/RootLayout";
 const App = () => {
   return (
     <div>
-      <Navbar />
       <Routes>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Home />} />
