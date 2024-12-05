@@ -7,6 +7,7 @@ import Orders from "./pages/Orders";
 import Booking from "./pages/Booking";
 import AuthLayout from "./layouts/AuthLayout";
 import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 const App = () => {
   return (
@@ -19,9 +20,10 @@ const App = () => {
           <Route path="/orders" element={<Orders />} />
           <Route path="booking" element={<Booking />} />
         </Route>
-        <Route path="authlayout" element={<AuthLayout />}>
-          <Route index element={<SignIn />} />
-        </Route>
+        {/* <Route path="/authlayout" element={<AuthLayout />}>
+          <Route path="login" element={<SignIn />} />
+          <Route path="signup" element={<SignUp />} />
+        </Route> */}
       </Routes>
     </div>
   );

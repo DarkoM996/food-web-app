@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import SidebarMenu from "@/components/SidebarMenu";
 import { Outlet } from "react-router";
-import AuthLayout from "./AuthLayout";
 
 const RootLayout = () => {
   return (
@@ -13,7 +12,6 @@ const RootLayout = () => {
         <Navbar />
         <Outlet />
       </div>
-      <AuthLayout />
     </main>
   );
 };
