@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router";
 import Home from "./components/Home";
 import RootLayout from "./layouts/RootLayout";
 import MenuLayout from "./pages/MenuLayout";
+import Favorite from "./pages/Favorite";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Home />} />
           <Route path="/menulayout" element={<MenuLayout />} />
+          <Route path="/favorite" element={<Favorite />} />
         </Route>
       </Routes>
     </div>
