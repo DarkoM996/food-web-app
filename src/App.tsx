@@ -8,6 +8,7 @@ import Booking from "./pages/Booking";
 import AuthLayout from "./layouts/AuthLayout";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import Profile from "./pages/Profile";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/favorite" element={<Favorite />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="booking" element={<Booking />} />
+          <Route path="profile" element={<Profile />} />
         </Route>
         <Route path="/authlayout" element={<AuthLayout />}>
           <Route path="signin" element={<SignIn />} />
