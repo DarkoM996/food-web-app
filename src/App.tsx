@@ -5,18 +5,15 @@ import Home from "./components/Home";
 import Dashboard from "./components/Dashboard";
 import DashboardHome from "./components/DashboardHome";
 import Settings from "./components/Settings";
+import RootLayout from "./layouts/RootLayout";
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Root />}>
+        <Route path="/" element={<RootLayout />}>
           <Route index element={<Home />} />
-          <Route path="dashboard" element={<Dashboard />}>
-            <Route index element={<DashboardHome />} />
-            <Route path="settings" element={<Settings />} />
-          </Route>
         </Route>
       </Routes>
     </div>
