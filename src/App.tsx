@@ -9,6 +9,8 @@ import AuthLayout from "./layouts/AuthLayout";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Profile from "./pages/Profile";
+import Settings from "./pages/Settings";
+import Error404 from "./pages/Error404";
 
 const App = () => {
   return (
@@ -21,11 +23,13 @@ const App = () => {
           <Route path="/orders" element={<Orders />} />
           <Route path="booking" element={<Booking />} />
           <Route path="profile" element={<Profile />} />
+          <Route path="/settings" element={<Settings />} />
         </Route>
         <Route path="/authlayout" element={<AuthLayout />}>
           <Route path="signin" element={<SignIn />} />
           <Route path="signup" element={<SignUp />} />
         </Route>
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </div>
   );
