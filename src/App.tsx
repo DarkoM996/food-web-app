@@ -14,7 +14,7 @@ import Error404 from "./pages/Error404";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Routes>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Home />} />
@@ -31,7 +31,7 @@ const App = () => {
         </Route>
         <Route path="*" element={<Error404 />} />
       </Routes>
-    </div>
+    </>
   );
 };
 

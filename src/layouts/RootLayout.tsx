@@ -8,7 +8,7 @@ const RootLayout = () => {
       <div className="hidden md:flex">
         <SidebarMenu />
       </div>
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full gap-6">
         <Navbar />
         <Outlet />
       </div>

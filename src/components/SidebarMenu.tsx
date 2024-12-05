@@ -1,5 +1,7 @@
 const SidebarMenu = () => {
-  return <div className="w-[230px] h-screen bg-neutral-200">SidebarMenu</div>;
+  return (
+    <aside className="w-[220px] h-screen bg-neutral-200">SidebarMenu</aside>
+  );
 };
 
 export default SidebarMenu;
