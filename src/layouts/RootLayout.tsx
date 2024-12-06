@@ -4,11 +4,11 @@ import { Outlet } from "react-router";
 
 const RootLayout = () => {
   return (
-    <main className="flex">
-      <div className="hidden md:flex w-[14%]">
+    <main className="grid md:grid-cols-[200px,auto] gap-4">
+      <div className="hidden md:flex">
         <SidebarMenu />
       </div>
-      <div className="flex flex-col w-full md:w-[86%] gap-6">
+      <div className="flex flex-col w-full  gap-6">
         <Navbar />
         <Outlet />
       </div>
