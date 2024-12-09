@@ -36,10 +36,10 @@ const Route = ({
 }) => {
   return (
     <button
-      className={`flex justify-start items-center gap-2 w-full rounded px-2 py-1.5 text-sm transition-[box-shadow,_background-color,_color] ${
+      className={`flex justify-start items-center gap-2 w-full rounded-full px-2 py-1.5 text-sm transition-[box-shadow,_background-color,_color] ${
         selected
           ? "bg-white text-primary_black-950 shadow"
-          : "hover:bg-neutral-400 text-primary_grays-500 bg-transparent shadow-none"
+          : "hover:bg-neutral-400 text-primary_grays-600 hover:text-primary_grays-900 bg-transparent shadow-none"
       }`}
     >
       <Icon />
