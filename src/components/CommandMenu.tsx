@@ -26,20 +26,24 @@ const CommandMenu = ({
       open={open}
       onOpenChange={setOpen}
       label="Global Command Menu"
+      className="fixed inset-0 bg-primary_black-900/50"
+      onClick={() => setOpen(false)}
     >
-      <Command.Input />
-      <Command.List>
-        <Command.Empty>No results found.</Command.Empty>
+      <div>
+        <Command.Input />
+        <Command.List>
+          <Command.Empty>No results found.</Command.Empty>
 
-        <Command.Group heading="Letters">
-          <Command.Item>a</Command.Item>
-          <Command.Item>b</Command.Item>
-          <Command.Separator />
-          <Command.Item>c</Command.Item>
-        </Command.Group>
+          <Command.Group heading="Letters">
+            <Command.Item>a</Command.Item>
+            <Command.Item>b</Command.Item>
+            <Command.Separator />
+            <Command.Item>c</Command.Item>
+          </Command.Group>
 
-        <Command.Item>Apple</Command.Item>
-      </Command.List>
+          <Command.Item>Apple</Command.Item>
+        </Command.List>
+      </div>
     </Command.Dialog>
   );
 };
