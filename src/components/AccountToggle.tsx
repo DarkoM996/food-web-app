@@ -1,3 +1,5 @@
+import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
+
 const AccountToggle = () => {
   return (
     <div className="border-b mb-4 mt-2 pb-4 border-stone-300">
@@ -15,6 +17,9 @@ const AccountToggle = () => {
             <p>andrew@gmail.com</p>
           </span>
         </div>
+
+        <FaChevronDown className="absolute right-2 top-1/2 translate-y-[calc(-50%+4px)] text-xs" />
+        <FaChevronUp className="absolute right-2 top-1/2 translate-y-[calc(-50%-4px)] text-xs" />
       </button>
     </div>
   );
