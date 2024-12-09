@@ -1,9 +1,13 @@
 import { Command } from "cmdk";
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect } from "react";
 
-const CommandMenu = () => {
-  const [open, setOpen] = useState(false);
-
+const CommandMenu = ({
+  open,
+  setOpen,
+}: {
+  open: boolean;
+  setOpen: Dispatch<SetStateAction<boolean>>;
+}) => {
   // Toggle the menu when ⌘K is pressed
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
