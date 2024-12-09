@@ -65,6 +65,20 @@ const CommandMenu = ({
               See Org Chart
             </Command.Item>
           </Command.Group>
+          <Command.Group
+            heading="Team"
+            className="text-sm mb-3 p-2 text-primary_grays-400"
+          >
+            <Command.Item className="flex cursor-pointer transition-colors p-2 text-sm text-stone-950 hover:bg-stone-200 rounded items-center gap-2">
+              <FiPlus />
+              Invite Member
+            </Command.Item>
+            <Command.Separator />
+            <Command.Item className="flex cursor-pointer transition-colors p-2 text-sm text-stone-950 hover:bg-stone-200 rounded items-center gap-2">
+              <FiEye />
+              See Org Chart
+            </Command.Item>
+          </Command.Group>
         </Command.List>
       </div>
     </Command.Dialog>
