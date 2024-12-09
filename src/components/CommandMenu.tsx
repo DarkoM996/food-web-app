@@ -1,6 +1,6 @@
 import { Command } from "cmdk";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import { FiEye, FiPlus } from "react-icons/fi";
+import { FiEye, FiLogOut, FiPlus } from "react-icons/fi";
 
 const CommandMenu = ({
   open,
@@ -79,6 +79,10 @@ const CommandMenu = ({
               See Org Chart
             </Command.Item>
           </Command.Group>
+          <Command.Item className="flex cursor-pointer transition-colors pl-4 py-2 text-sm text-stone-950 hover:bg-stone-200 rounded items-center gap-2">
+            <FiLogOut />
+            Sign Out
+          </Command.Item>
         </Command.List>
       </div>
     </Command.Dialog>
