@@ -29,7 +29,10 @@ const CommandMenu = ({
       className="fixed inset-0 bg-primary_black-900/50"
       onClick={() => setOpen(false)}
     >
-      <div>
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="bg-white rounded-lg shadow-xl border-stone-300 border overflow-hidden w-full max-w-lg mx-auto mt-12"
+      >
         <Command.Input />
         <Command.List>
           <Command.Empty>No results found.</Command.Empty>
