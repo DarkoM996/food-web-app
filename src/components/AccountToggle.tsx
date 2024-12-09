@@ -5,8 +5,16 @@ const AccountToggle = () => {
         <img
           src="https://api.dicebear.com/9.x/adventurer/svg?seed=Aneka"
           alt="avatar"
-          className="size-8 rounded shrink-0 bg-violet-500 shadow"
+          className="size-8 rounded shrink-0 bg-primary_backgroundLighterColor-500 shadow"
         />
+        <div className="text-start">
+          <span className="text-sm font-bold block">
+            <p>Andrew Young</p>
+          </span>
+          <span className="text-xs font-light block">
+            <p>andrew@gmail.com</p>
+          </span>
+        </div>
       </button>
     </div>
   );
