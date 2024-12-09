@@ -1,5 +1,6 @@
 import { Command } from "cmdk";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { FiEye, FiPlus } from "react-icons/fi";
 
 const CommandMenu = ({
   open,
@@ -50,14 +51,20 @@ const CommandMenu = ({
             </span>
           </Command.Empty>
 
-          <Command.Group heading="Letters">
-            <Command.Item>a</Command.Item>
-            <Command.Item>b</Command.Item>
+          <Command.Group
+            heading="Team"
+            className="text-sm mb-3 p-2 text-primary_grays-400"
+          >
+            <Command.Item className="flex cursor-pointer transition-colors p-2 text-sm text-stone-950 hover:bg-stone-200 rounded items-center gap-2">
+              <FiPlus />
+              Invite Member
+            </Command.Item>
             <Command.Separator />
-            <Command.Item>c</Command.Item>
+            <Command.Item className="flex cursor-pointer transition-colors p-2 text-sm text-stone-950 hover:bg-stone-200 rounded items-center gap-2">
+              <FiEye />
+              See Org Chart
+            </Command.Item>
           </Command.Group>
-
-          <Command.Item>Apple</Command.Item>
         </Command.List>
       </div>
     </Command.Dialog>
