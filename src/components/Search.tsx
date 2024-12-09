@@ -1,5 +1,6 @@
 import { FiSearch } from "react-icons/fi";
 import { useState } from "react";
+import CommandMenu from "./CommandMenu";
 
 const Search = () => {
   const [open, setOpen] = useState(false);
@@ -14,6 +15,8 @@ const Search = () => {
           className="w-full bg-transparent placeholder:text-primary_grays-500 focus:outline-none"
         />
       </div>
+
+      <CommandMenu open={open} setOpen={setOpen} />
     </>
   );
 };
