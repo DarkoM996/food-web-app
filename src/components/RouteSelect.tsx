@@ -13,12 +13,12 @@ const RouteSelect = () => {
   return (
     <div className="space-y-2">
       <Route Icon={FiHome} selected={true} title="Dashboard" />
-      <Route Icon={MdFavoriteBorder} selected={true} title="Favorites" />
-      <Route Icon={MdOutlineRestaurantMenu} selected={true} title="Orders" />
-      <Route Icon={MdOutlineList} selected={true} title="MenuLayout" />
-      <Route Icon={MdPayment} selected={true} title="Booking" />
-      <Route Icon={MdOutlinePerson} selected={true} title="Sign In" />
-      <Route Icon={MdOutlinePersonAddAlt} selected={true} title="Sign Up" />
+      <Route Icon={MdFavoriteBorder} selected={false} title="Favorites" />
+      <Route Icon={MdOutlineRestaurantMenu} selected={false} title="Orders" />
+      <Route Icon={MdOutlineList} selected={false} title="MenuLayout" />
+      <Route Icon={MdPayment} selected={false} title="Booking" />
+      <Route Icon={MdOutlinePerson} selected={false} title="Sign In" />
+      <Route Icon={MdOutlinePersonAddAlt} selected={false} title="Sign Up" />
     </div>
   );
 };
@@ -35,8 +35,15 @@ const Route = ({
   title: string;
 }) => {
   return (
-    <button>
+    <button
+      className={`flex justify-start items-center gap-2 w-full rounded px-2 py-1.5 text-sm transition-[box-shadow,_background-color,_color] ${
+        selected
+          ? "bg-white text-primary_black-950 shadow"
+          : "hover:bg-neutral-400 text-primary_grays-500 bg-transparent shadow-none"
+      }`}
+    >
       <Icon />
+      <span>{title}</span>
     </button>
   );
 };
