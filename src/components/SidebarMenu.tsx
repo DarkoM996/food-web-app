@@ -7,7 +7,6 @@ const SidebarMenu = () => {
   return (
     <aside className="w-full h-screen bg-primary_white-200 ">
       <div className="sticky top-4 px-2 h-[calc(100vh-32px-48px)]">
-        <AccountToggle />
         <Search />
         <RouteSelect />
       </div>
