@@ -1,8 +1,9 @@
 import { Link } from "react-router";
 import Menu from "./ui/Menu";
+
 const SidebarMenu = () => {
   return (
-    <aside className="w-full h-screen bg-white ">
+    <aside className="w-full min-h-screen sticky top-0 bg-white ">
       <Link
         to="/"
         className="flex flex-col justify-center items-center p-4 border-b border-neutral-100"
