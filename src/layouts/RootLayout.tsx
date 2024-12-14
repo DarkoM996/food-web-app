@@ -6,7 +6,10 @@ const RootLayout = () => {
   return (
     <>
       <Navbar />
-      <Outlet />
+      <div className="grid grid-cols-[200px,_1fr] gap-6">
+        <SidebarMenu />
+        <Outlet />
+      </div>
     </>
   );
 };
