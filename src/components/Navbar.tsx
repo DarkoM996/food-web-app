@@ -11,7 +11,7 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="max-w-screen-3xl mx-auto w-full h-20 flex justify-between items-center px-6 py-8 bg-primary_white-200">
+    <div className="max-w-screen-3xl mx-auto w-full h-20 flex justify-between items-center px-6 py-8">
       <Link to="/">
         <h4 className="font-bold text-2xl">The Tomato</h4>
       </Link>
