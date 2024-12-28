@@ -4,15 +4,13 @@ import { Outlet } from "react-router";
 
 const RootLayout = () => {
   return (
-    <main className="grid md:grid-cols-[200px,auto] gap-4">
-      <div className="hidden md:flex">
+    <>
+      <Navbar />
+      <div className="grid grid-cols-[200px,_1fr] gap-6">
         <SidebarMenu />
-      </div>
-      <div className="flex flex-col w-full  gap-6">
-        <Navbar />
         <Outlet />
       </div>
-    </main>
+    </>
   );
 };
 
