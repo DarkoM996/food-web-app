@@ -21,7 +21,7 @@ import {
 
 const SidebarMenu = () => {
   return (
-    <Command>
+    <Command className="h-screen">
       <CommandInput placeholder="Type a command or search..." />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
