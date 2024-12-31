@@ -26,15 +26,37 @@ const SidebarMenu = () => {
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup heading="Suggestions">
-          <CommandItem>Calendar</CommandItem>
-          <CommandItem>Search Emoji</CommandItem>
-          <CommandItem>Calculator</CommandItem>
+          <CommandItem>
+            <LayoutDashboard className="mr-2 h-4 w-4" />
+            <Link to="/">Dashboard</Link>
+          </CommandItem>
+          <CommandItem>
+            <LayoutDashboard className="mr-2 h-4 w-4" />
+            <Link to="/">Orders</Link>
+          </CommandItem>
+          <CommandItem>
+            <LayoutDashboard className="mr-2 h-4 w-4" />
+            <Link to="/">Favorites</Link>
+          </CommandItem>
+          <CommandItem>
+            <LayoutDashboard className="mr-2 h-4 w-4" />
+            <Link to="/">Menu Layouts</Link>
+          </CommandItem>
         </CommandGroup>
         <CommandSeparator />
         <CommandGroup heading="Settings">
-          <CommandItem>Profile</CommandItem>
-          <CommandItem>Billing</CommandItem>
-          <CommandItem>Settings</CommandItem>
+          <CommandItem>
+            <LayoutDashboard className="mr-2 h-4 w-4" />
+            <Link to="/">Profile</Link>
+          </CommandItem>
+          <CommandItem>
+            <LayoutDashboard className="mr-2 h-4 w-4" />
+            <Link to="/">Booking</Link>
+          </CommandItem>
+          <CommandItem>
+            <LayoutDashboard className="mr-2 h-4 w-4" />
+            <Link to="/">Settings</Link>
+          </CommandItem>
         </CommandGroup>
       </CommandList>
     </Command>
