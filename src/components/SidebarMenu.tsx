@@ -51,7 +51,7 @@ const SidebarMenu = () => {
             <Link to="/">Profile</Link>
           </CommandItem>
           <CommandItem>
-            <LayoutDashboard className="mr-2 h-4 w-4" />
+            <CreditCard className="mr-2 h-4 w-4" />
             <Link to="/">Booking</Link>
           </CommandItem>
           <CommandItem>
