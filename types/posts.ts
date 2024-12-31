@@ -3,11 +3,11 @@ export interface Post {
   title: string;
   body: string;
   user: string;
-  date: number;
-  orders: PostOrder[];
+  date: string;
+  comments: PostComment[];
 }
 
-export interface PostOrder {
+export interface PostComment {
   id: string;
   text: string;
   username: string;
