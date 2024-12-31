@@ -1,6 +1,6 @@
 import DashboardCard from "@/components/dashboard/DashboardCard";
 import { Folders, Newspaper, Users } from "lucide-react";
-import PostTable from "@/components/posts/PostTable";
+import Orders from "./Orders";
 
 const HomePage = () => {
   return (
@@ -25,7 +25,6 @@ const HomePage = () => {
         count={10000}
         icon={<Newspaper className="text-neutral-500" size={72} />}
       />
-      <PostTable />
     </div>
   );
 };
