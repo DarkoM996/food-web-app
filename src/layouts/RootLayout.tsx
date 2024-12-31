@@ -6,7 +6,7 @@ const RootLayout = () => {
   return (
     <>
       <Navbar />
-      <div className="grid grid-cols-[200px,_1fr] gap-6">
+      <div className="grid grid-cols-[250px,_1fr] gap-6">
         <div className="hidden md:flex">
           <SidebarMenu />
         </div>
