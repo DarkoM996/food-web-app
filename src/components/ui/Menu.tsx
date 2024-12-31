@@ -12,11 +12,8 @@
 const Menu = () => {
   return (
     <div className="w-full h-full flex flex-col">
-      <div className="flex flex-col justify-start items-center gap-2 w-full h-2/3 bg-slate-200">
+      <div className="flex flex-col justify-start items-center gap-2 w-full h-screen bg-slate-200">
         1
-      </div>
-      <div className="flex flex-col justify-start items-center gap-2 w-full h-1/3">
-        2
       </div>
     </div>
   );
