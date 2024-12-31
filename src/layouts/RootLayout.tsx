@@ -7,7 +7,7 @@ const RootLayout = () => {
     <>
       <Navbar />
       <div className="grid grid-cols-[250px,_1fr] gap-6">
-        <div className="hidden md:block">
+        <div className="hidden md:block h-screen">
           <SidebarMenu />
         </div>
         <Outlet />

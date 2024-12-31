@@ -21,7 +21,7 @@ import {
 
 const SidebarMenu = () => {
   return (
-    <Command className="h-screen bg-neutral-50">
+    <Command className="bg-neutral-50">
       <CommandInput placeholder="Type a command or search..." />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
