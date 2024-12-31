@@ -1,5 +1,11 @@
+import DashboardCard from "@/components/dashboard/DashboardCard";
+
 const HomePage = () => {
-  return <div>asdasd</div>;
+  return (
+    <div>
+      <DashboardCard />
+    </div>
+  );
 };
 
 export default HomePage;
