@@ -26,7 +26,7 @@ const HomePage = () => {
         count={10000}
         icon={<Newspaper className="text-neutral-500" size={72} />}
       />
-      <PostTable />
+      <PostTable title="Latest Posts" />
     </div>
   );
 };
