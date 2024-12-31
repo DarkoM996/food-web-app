@@ -4,7 +4,7 @@ import Orders from "./Orders";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between gap-5 my-5">
+    <div className="flex flex-col justify-between gap-5 my-5">
       <DashboardCard
         title="Posts"
         count={100}
