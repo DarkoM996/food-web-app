@@ -9,7 +9,10 @@ const DashboardCard = () => {
           Posts
         </h3>
         <div className="flex gap-5 justify-center items-center">
-          <Newspaper />
+          <Newspaper className="text-neutral-500" size={72} />
+          <h3 className="text-5xl font-semibold text-neutral-500 dark:text-neutral-200">
+            100
+          </h3>
         </div>
       </CardContent>
     </Card>
