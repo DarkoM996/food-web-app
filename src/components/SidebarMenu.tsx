@@ -33,30 +33,30 @@ const SidebarMenu = () => {
           </CommandItem>
           <CommandItem>
             <Logs className="mr-2 h-4 w-4" />
-            <Link to="/">Orders</Link>
+            <Link to="/orders">Orders</Link>
           </CommandItem>
           <CommandItem>
             <Heart className="mr-2 h-4 w-4" />
-            <Link to="/">Favorites</Link>
+            <Link to="/favorite">Favorites</Link>
           </CommandItem>
           <CommandItem>
             <Columns className="mr-2 h-4 w-4" />
-            <Link to="/">Menu Layouts</Link>
+            <Link to="/menulayout">Menu Layouts</Link>
           </CommandItem>
         </CommandGroup>
         <CommandSeparator />
         <CommandGroup heading="Settings">
           <CommandItem>
             <User className="mr-2 h-4 w-4" />
-            <Link to="/">Profile</Link>
+            <Link to="/profile">Profile</Link>
           </CommandItem>
           <CommandItem>
             <CreditCard className="mr-2 h-4 w-4" />
-            <Link to="/">Booking</Link>
+            <Link to="/booking">Booking</Link>
           </CommandItem>
           <CommandItem>
             <Settings className="mr-2 h-4 w-4" />
-            <Link to="/">Settings</Link>
+            <Link to="/settings">Settings</Link>
           </CommandItem>
         </CommandGroup>
       </CommandList>
