@@ -6,11 +6,13 @@ const RootLayout = () => {
   return (
     <>
       <Navbar />
-      <div className="grid grid-cols-[250px,_1fr] gap-6">
-        <div className="hidden md:block h-screen">
+      <div className="flex">
+        <div className="hidden md:block h-[100vh] w-[300px]">
           <SidebarMenu />
         </div>
-        <Outlet />
+        <div className="p-5 w-full md:max-w-[1140px]">
+          <Outlet />
+        </div>
       </div>
     </>
   );
