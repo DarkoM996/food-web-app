@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router";
-import Home from "./components/Home";
+
 import RootLayout from "./layouts/RootLayout";
 import MenuLayout from "./pages/MenuLayout";
 import Favorite from "./pages/Favorite";
@@ -11,13 +11,14 @@ import SignUp from "./pages/SignUp";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 import Error404 from "./pages/Error404";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<RootLayout />}>
-          <Route index element={<Home />} />
+          <Route index element={<HomePage />} />
           <Route path="/menulayout" element={<MenuLayout />} />
           <Route path="/favorite" element={<Favorite />} />
           <Route path="/orders" element={<Orders />} />
