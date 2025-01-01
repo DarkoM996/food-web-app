@@ -17,6 +17,11 @@ interface PostTableProps {
 }
 
 const PostTable = ({ limit, title }: PostTableProps) => {
+  //Sort posts in dec order based on date
+  const sortedPosts: Post[] = [...posts].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+
   return (
     <div className="mt-10">
       <h3 className="text-2xl mb-4 font-semibold">{title ? title : "Posts"}</h3>

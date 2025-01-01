@@ -5,29 +5,31 @@ import PostTable from "@/components/posts/PostTable";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between gap-5 my-5">
-      <DashboardCard
-        title="Posts"
-        count={100}
-        icon={<Newspaper className="text-neutral-500" size={72} />}
-      />
-      <DashboardCard
-        title="Category"
-        count={12}
-        icon={<Folders className="text-neutral-500" size={72} />}
-      />
-      <DashboardCard
-        title="Users"
-        count={2000}
-        icon={<Users className="text-neutral-500" size={72} />}
-      />
-      <DashboardCard
-        title="Orders"
-        count={10000}
-        icon={<Newspaper className="text-neutral-500" size={72} />}
-      />
-      <PostTable title="Latest Posts" />
-    </div>
+    <>
+      <div className="flex flex-col justify-between gap-5 my-5">
+        <DashboardCard
+          title="Posts"
+          count={100}
+          icon={<Newspaper className="text-neutral-500" size={72} />}
+        />
+        <DashboardCard
+          title="Category"
+          count={12}
+          icon={<Folders className="text-neutral-500" size={72} />}
+        />
+        <DashboardCard
+          title="Users"
+          count={2000}
+          icon={<Users className="text-neutral-500" size={72} />}
+        />
+        <DashboardCard
+          title="Orders"
+          count={10000}
+          icon={<Newspaper className="text-neutral-500" size={72} />}
+        />
+      </div>
+      <PostTable title="Latest Posts" limit={5} />
+    </>
   );
 };
 
