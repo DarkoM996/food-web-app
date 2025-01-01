@@ -1,5 +1,11 @@
+import PostTable from "@/components/posts/PostTable";
+
 const Orders = () => {
-  return <div>Orders</div>;
+  return (
+    <>
+      <PostTable />
+    </>
+  );
 };
 
 export default Orders;
