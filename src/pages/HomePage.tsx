@@ -6,7 +6,7 @@ import PostTable from "@/components/posts/PostTable";
 const HomePage = () => {
   return (
     <>
-      <div className="flex flex-col justify-between gap-5 my-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <DashboardCard
           title="Posts"
           count={100}
