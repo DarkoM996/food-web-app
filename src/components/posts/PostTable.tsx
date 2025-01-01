@@ -29,6 +29,7 @@ const PostTable = ({ limit, title }: PostTableProps) => {
             <TableHead className="hidden md:table-cell text-right">
               Date
             </TableHead>
+            <TableHead>View</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -37,6 +38,16 @@ const PostTable = ({ limit, title }: PostTableProps) => {
               <TableCell>{post.title}</TableCell>
               <TableCell className="hidden md:table-cell">
                 {post.author}
+              </TableCell>
+              <TableCell className="hidden md:table-cell text-right">
+                {post.date}
+              </TableCell>
+              <TableCell>
+                <Link to={`/posts/edit/${post.id}`}>
+                  <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full text-xs">
+                    Edit
+                  </button>
+                </Link>
               </TableCell>
             </TableRow>
           ))}
