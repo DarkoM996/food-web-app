@@ -2,6 +2,7 @@ import DashboardCard from "@/components/dashboard/DashboardCard";
 import { Folders, Newspaper, Users } from "lucide-react";
 import Orders from "./Orders";
 import PostTable from "@/components/posts/PostTable";
+import AnalyticsChart from "@/components/dashboard/AnalyticsChart";
 
 const HomePage = () => {
   return (
@@ -28,6 +29,7 @@ const HomePage = () => {
           icon={<Newspaper className="text-neutral-500" size={72} />}
         />
       </div>
+      <AnalyticsChart />
       <PostTable title="Latest Posts" limit={5} />
     </>
   );
