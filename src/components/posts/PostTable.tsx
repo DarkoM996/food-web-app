@@ -38,7 +38,7 @@ const PostTable = ({ limit, title }: PostTableProps) => {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {posts.map((post) => (
+          {sortedPosts.map((post) => (
             <TableRow key={post.id}>
               <TableCell>{post.title}</TableCell>
               <TableCell className="hidden md:table-cell">
