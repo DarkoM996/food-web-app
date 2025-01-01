@@ -12,7 +12,7 @@ import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 import Error404 from "./pages/Error404";
 import HomePage from "./pages/HomePage";
-import Order from "./pages/Order";
+import Order from "./pages/EditPage/Order";
 
 const App = () => {
   return (
