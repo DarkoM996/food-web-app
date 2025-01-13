@@ -7,26 +7,26 @@ import AnalyticsChart from "@/components/dashboard/AnalyticsChart";
 const HomePage = () => {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 py-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-5">
         <DashboardCard
           title="Posts"
           count={100}
-          icon={<Newspaper className="text-neutral-500" size={72} />}
+          icon={<Newspaper className="text-neutral-500" size={48} />}
         />
         <DashboardCard
           title="Category"
           count={12}
-          icon={<Folders className="text-neutral-500" size={72} />}
+          icon={<Folders className="text-neutral-500" size={48} />}
         />
         <DashboardCard
           title="Users"
           count={2000}
-          icon={<Users className="text-neutral-500" size={72} />}
+          icon={<Users className="text-neutral-500" size={48} />}
         />
         <DashboardCard
           title="Orders"
           count={10000}
-          icon={<Newspaper className="text-neutral-500" size={72} />}
+          icon={<Newspaper className="text-neutral-500" size={48} />}
         />
       </div>
       <AnalyticsChart />
