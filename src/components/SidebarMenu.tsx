@@ -36,10 +36,6 @@ const SidebarMenu = () => {
             <Link to="/orders">Orders</Link>
           </CommandItem>
           <CommandItem>
-            <Heart className="mr-2 h-4 w-4" />
-            <Link to="/favorite">Favorites</Link>
-          </CommandItem>
-          <CommandItem>
             <Columns className="mr-2 h-4 w-4" />
             <Link to="/menulayout">Menu Layouts</Link>
           </CommandItem>
