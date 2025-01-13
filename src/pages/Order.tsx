@@ -1,5 +1,11 @@
+import BackButton from "./../components/BackButton";
+
 const Order = () => {
-  return <div>Edit </div>;
+  return (
+    <>
+      <BackButton text="Back To Orders" link="/orders" />
+    </>
+  );
 };
 
 export default Order;
